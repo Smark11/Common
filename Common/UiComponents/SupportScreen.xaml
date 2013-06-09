@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Common.UiComponents.SupportScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    Height="Auto" Width="Auto">
+
+    <Viewbox Stretch="None">
+        <!--About Grid-->
+        <Grid Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" HorizontalAlignment="Center" x:Name="InfoGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1">
+                <TextBlock Grid.Row="1" Foreground="Red" FontSize="30" Text="application information:"/>
+                <TextBlock Grid.Row="1" Text="Version 1.0.0.0, Released 5/2/2013"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="2">
+                <TextBlock Grid.Row="1" Foreground="Red" FontSize="30" Text="support:"/>
+                <TextBlock Grid.Row="1" Text="KlbCreation01@yahoo.com"/>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</UserControl>
