@@ -18,9 +18,14 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0,0,0,20">
+                <TextBlock HorizontalAlignment="Center" 
+                           Grid.Row="1" Foreground="Red" FontSize="30" Text="Math Flash Cards:"/>
+            </StackPanel>
+            
             <StackPanel Orientation="Vertical" Grid.Row="1">
                 <TextBlock Grid.Row="1" Foreground="Red" FontSize="30" Text="application information:"/>
-                <TextBlock Grid.Row="1" Text="Version 1.0.0.0, Released 5/2/2013"/>
+                <TextBlock Grid.Row="1" Text="Version 1.0.0.0, Released 6/17/2013"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Grid.Row="2">

@@ -94,6 +94,7 @@
     <Compile Include="UiComponents\TrialOver.xaml.cs">
       <DependentUpon>TrialOver.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\VoiceOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="UiComponents\SupportScreen.xaml">
