@@ -50,5 +50,39 @@ namespace Common.IsolatedStoreage
 
             return returnValue;
         }
+
+        public static string GetSettingStringValue(string key)
+        {
+            string returnValue = string.Empty;
+
+            try
+            {
+                IsolatedStorageSettings appSettings = IsolatedStorageSettings.ApplicationSettings;
+                if (appSettings.Contains(key))
+                {
+                    returnValue = appSettings[key].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return returnValue;
+        }
+        public static void RemoveSetting(string key)
+        {
+            try
+            {
+                IsolatedStorageSettings appSettings = IsolatedStorageSettings.ApplicationSettings;
+
+                appSettings.Remove(key);
+                appSettings.Save();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
